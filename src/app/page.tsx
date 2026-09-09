@@ -3,38 +3,33 @@
 import { Shirt, RotateCcw, Truck } from "lucide-react";
 
 export default function Home() {
-  // Data produk New Arrivals dengan Unsplash Foto Estetik Earth Tone & Linen
   const newArrivals = [
     {
       id: 1,
       name: "Geggo Oversized Linen Shirt Milk White",
       price: 189000,
-      image:
-        "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?q=80&w=800",
+      image: "/images/shirt-white.png",
       isNew: true,
     },
     {
       id: 2,
       name: "Aria Pleated Highwaist Cullote Oat",
       price: 219000,
-      image:
-        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?q=80&w=800",
+      image: "/images/cullote-oat.png",
       isNew: false,
     },
     {
       id: 3,
       name: "Sienna Tiered Midi Dress Sage",
       price: 249000,
-      image:
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=800",
+      image: "/images/dress-sage.png",
       isNew: false,
     },
     {
       id: 4,
       name: "Mera Knitted Vest Warm Taupe",
       price: 169000,
-      image:
-        "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?q=80&w=800",
+      image: "/images/vest-taupe.png",
       isNew: false,
     },
   ];
@@ -44,11 +39,11 @@ export default function Home() {
       {/* 1. HERO BANNER SECTION */}
       <section className="relative w-full h-[580px] bg-[#E8ECE9] overflow-hidden flex items-center justify-center">
         <img
-          src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1600"
+          src="/images/hero-bg.png"
           alt="The Everyday Linen Series"
-          className="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.92]"
+          className="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.95]"
         />
-        <div className="relative z-10 text-center max-w-2xl px-8 py-10 bg-black/25 backdrop-blur-md rounded-xl text-white border border-white/20 shadow-2xl">
+        <div className="relative z-10 text-center max-w-2xl px-8 py-10 bg-black/30 backdrop-blur-md rounded-xl text-white border border-white/20 shadow-2xl">
           <p className="text-xs uppercase tracking-[0.3em] font-medium text-amber-100 mb-2">
             Minimalist Editorial Collection
           </p>
@@ -70,7 +65,7 @@ export default function Home() {
           {/* Large Left Card */}
           <div className="relative h-[500px] group overflow-hidden bg-stone-200 rounded-sm shadow-xs">
             <img
-              src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?q=80&w=1000"
+              src="/images/blouse-tops.png"
               alt="Blouse & Tops"
               className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
             />
@@ -86,7 +81,7 @@ export default function Home() {
             {/* Top Right Card */}
             <div className="relative h-[238px] group overflow-hidden bg-stone-200 rounded-sm shadow-xs">
               <img
-                src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800"
+                src="/images/pleated-pants.png"
                 alt="Pleated Pants"
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
               />
@@ -98,9 +93,9 @@ export default function Home() {
             </div>
 
             {/* Bottom Right Card */}
-            <div className="relative h-[238px] group overflow-hidden bg-stone-200 rounded-sm shadow-xs">
+            <div className="relative h-[228px] group overflow-hidden bg-stone-200 rounded-sm shadow-xs">
               <img
-                src="https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800"
+                src="/images/casual-dresses.png"
                 alt="Casual Dresses"
                 className="w-full h-full object-cover group-hover:scale-105 transition duration-700"
               />
