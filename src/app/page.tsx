@@ -37,23 +37,29 @@ export default function Home() {
   return (
     <div className="w-full bg-[#FAF9F6]">
       {/* 1. HERO BANNER SECTION */}
-      <section className="relative w-full h-[580px] bg-[#E8ECE9] overflow-hidden flex items-center justify-center">
+      <section className="relative w-full h-[640px] bg-[#E5E2DC] overflow-hidden flex items-end md:items-center justify-start">
+        {/* Gambar Editorial Model Clean & Luxury */}
         <img
-          src="/images/hero-bg.png"
+          src="/images/hero-bg.jpg"
           alt="The Everyday Linen Series"
-          className="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.95]"
+          className="absolute inset-0 w-full h-full object-cover object-[center_20%] filter brightness-[0.88]"
         />
-        <div className="relative z-10 text-center max-w-2xl px-8 py-10 bg-black/30 backdrop-blur-md rounded-xl text-white border border-white/20 shadow-2xl">
-          <p className="text-xs uppercase tracking-[0.3em] font-medium text-amber-100 mb-2">
+
+        {/* Shadow Overlay halus dari kiri */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
+
+        {/* Text Editorial Layout (Rata Kiri, Tipografi Elegan) */}
+        <div className="relative z-10 max-w-xl px-8 md:px-16 py-12 text-white">
+          <p className="text-[11px] uppercase tracking-[0.3em] font-medium text-amber-100 mb-2 drop-shadow-xs">
             Minimalist Editorial Collection
           </p>
-          <h1 className="font-serif text-3xl md:text-5xl font-normal tracking-[0.15em] uppercase mb-3 drop-shadow-sm">
-            THE EVERYDAY LINEN SERIES
+          <h1 className="font-serif text-3xl md:text-5xl font-light tracking-[0.15em] uppercase mb-4 leading-tight drop-shadow-sm">
+            THE EVERYDAY <br className="hidden md:block" /> LINEN SERIES
           </h1>
-          <p className="text-xs md:text-sm text-gray-200 tracking-wide font-light mb-6">
-            Koleksi Nyaman & Elegan untuk Aktivitas Harian
+          <p className="text-xs md:text-sm text-gray-200 tracking-wider font-light mb-8 max-w-sm drop-shadow-xs">
+            Koleksi Nyaman & Elegan untuk Aktivitas Harian.
           </p>
-          <button className="bg-white text-gray-900 text-[11px] tracking-[0.25em] uppercase px-8 py-3.5 font-semibold hover:bg-gray-100 transition shadow-md">
+          <button className="bg-white text-gray-900 text-[11px] tracking-[0.25em] uppercase px-8 py-4 font-semibold hover:bg-black hover:text-white transition duration-300 shadow-lg">
             JELAJAHI KOLEKSI
           </button>
         </div>
